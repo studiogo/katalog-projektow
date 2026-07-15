@@ -31,6 +31,7 @@ Komendy z `/` wpisujesz w **Claude Code**.
 | `/importuj-projekty` | Zeskanuj istniejące katalogi i zrób z nich projekty (mapa + huby + linki). Plików nie przenosi |
 | `/nowy-projekt` | Dodaj nowy projekt (katalog + węzeł grafu + wpis w mapie) |
 | `/polacz-projekty` | Połącz pokrewne projekty w graf |
+| `/koniec` | Zapisz stan projektu na koniec pracy (teczka + ustalenia + mapa) |
 | `/sprawdz-pamiec` | Sprawdź porządek (format, martwe linki, hasła w plikach) |
 
 ## Graf w Obsidianie

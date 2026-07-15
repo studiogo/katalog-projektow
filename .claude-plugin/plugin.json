@@ -1,7 +1,7 @@
 {
   "name": "katalog-projektow",
   "description": "System pamięci projektów dla Twojego agenta AI: struktura projektów, cienka mapa, graf w Obsidianie i strażnik porządku. Dla osób nietechnicznych. Bez kluczy API, bez kosztów zewnętrznych.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": { "name": "studiogo" },
   "license": "MIT"
 }

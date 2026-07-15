@@ -7,7 +7,7 @@
       "name": "katalog-projektow",
       "source": "./",
       "description": "Struktura projektów + cienka mapa + graf w Obsidianie + strażnik porządku. Kreator instalacyjny prowadzi przez setup.",
-      "version": "0.1.1"
+      "version": "0.1.2"
     }
   ]
 }
