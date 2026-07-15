@@ -1,0 +1,13 @@
+{
+  "name": "katalog-projektow",
+  "description": "Instalowalny system pamięci projektów dla agenta AI (Claude Code).",
+  "owner": { "name": "studiogo" },
+  "plugins": [
+    {
+      "name": "katalog-projektow",
+      "source": "./",
+      "description": "Struktura projektów + cienka mapa + graf w Obsidianie + strażnik porządku. Kreator instalacyjny prowadzi przez setup.",
+      "version": "0.1.0"
+    }
+  ]
+}

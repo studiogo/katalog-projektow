@@ -1,0 +1,27 @@
+{
+  "description": "Strażnicy porządku pamięci: pilnują formatu mapy przy zapisie i sprawdzają kondycję po turze.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/memory-write-gate.sh\""
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/memory-lint-check.sh\"",
+            "async": true
+          }
+        ]
+      }
+    ]
+  }
+}
