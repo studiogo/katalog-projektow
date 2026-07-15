@@ -14,7 +14,13 @@ find "$LOG_DIR" -name "raport-*.txt" -mtime +14 -delete 2>/dev/null
 MODE="${1:-console}"
 TS=$(date +%Y-%m-%d_%H-%M-%S)
 REPORT="$LOG_DIR/raport-$TS.txt"
-PY=$(command -v python3 || command -v python)
+# Wybór interpretera testem funkcjonalnym, nie samym `command -v`:
+# na Windowsie `python3` bywa zaślepką Microsoft Store (alias wykonania),
+# która przechodzi `command -v`, ale nie uruchamia Pythona. Sprawdzamy realnie.
+PY=""
+for c in python3 python py; do
+  if "$c" -c "import sys" >/dev/null 2>&1; then PY="$c"; break; fi
+done
 [[ -z "$PY" ]] && exit 0   # brak Pythona → strażnik cichy (reszta pluginu działa)
 
 if [[ "$MODE" == "--hook" ]]; then
