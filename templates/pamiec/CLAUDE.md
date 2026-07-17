@@ -21,6 +21,11 @@
 - `MEMORY.md` to tylko drogowskazy: nazwa + jedno zdanie + `[[link]]`. Szczegóły, daty i liczby → do `HANDOFF.md` danego projektu.
 - Gdy wracamy do sprawy „X" → przeczytaj `projects/X/HANDOFF.md`, zanim odpowiesz.
 
+# Powiązania między projektami (ważne — to oszczędza tokeny)
+- „Z czym łączy się projekt X?" albo „czy X jest gotowy" → otwórz `projects/X/X.md`, sekcję `## Powiązane`. Tam jest lista powiązanych projektów, każdy z krótkim powodem. NIE przeszukuj wszystkich projektów po kolei — powiązania są już wypisane w tym jednym pliku.
+- Powiązania buduje komenda `/polacz-projekty` (łączy po ZNACZENIU: wspólny klient, jeden projekt karmi drugi — nie po podobnej nazwie). Odpalaj ją po założeniu nowego projektu albo gdy dojdą nowe.
+- Cały graf naraz → otwórz folder `pamiec/` w Obsidianie (Graph View). To dla Ciebie, do oglądania — ja i tak czytam pojedyncze pliki.
+
 # Pamięć na żądanie
 Nie wczytuj wszystkiego naraz. Z `MEMORY.md` bierz tylko drogowskaz, a plik projektu otwórz
 DOPIERO, gdy w rozmowie wróci jego nazwa albo temat. Mniej w pamięci = trafniejsze odpowiedzi.

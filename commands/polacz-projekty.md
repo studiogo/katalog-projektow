@@ -13,4 +13,8 @@ Wykonaj:
 
 Zasada: łącz po sensie, nie po przypadkowym wspólnym słowie. Graf zobaczysz, otwierając `~/.claude/pamiec/` w Obsidianie (Graph View).
 
-Dla wielu par naraz możesz też wpisać je w `${CLAUDE_PLUGIN_ROOT}/bin/przelot-linkera.py` (lista EDGES) i uruchomić ten skrypt.
+Dla wielu projektów naraz uruchom skaner, który sam znajdzie powiązania z treści notatek (bez ręcznego wpisywania):
+- `python3 "${CLAUDE_PLUGIN_ROOT}/bin/przelot-linkera.py" --dry-run` — pokaże, co znalazł i skąd (plik:linia), nic nie zapisze.
+- `python3 "${CLAUDE_PLUGIN_ROOT}/bin/przelot-linkera.py"` — wpisze powiązania do hubów.
+- `python3 "${CLAUDE_PLUGIN_ROOT}/bin/przelot-linkera.py" --pokaz-dowody NAZWA` — pokaże, skąd wzięło się każde powiązanie danego projektu.
+Skaner łączy tylko tam, gdzie jeden projekt naprawdę odwołuje się do drugiego w treści — nie zgaduje.
