@@ -1,5 +1,9 @@
 # Katalog projektów — system pamięci dla Twojego agenta AI (plugin Claude Code)
 
+[![licencja MIT](https://img.shields.io/github/license/studiogo/katalog-projektow?style=flat-square)](LICENSE)
+[![ostatnia zmiana](https://img.shields.io/github/last-commit/studiogo/katalog-projektow?style=flat-square)](https://github.com/studiogo/katalog-projektow/commits/main)
+![Claude Code](https://img.shields.io/badge/Claude%20Code-wtyczka-D97757?style=flat-square)
+
 Porządek na wszystkie Twoje projekty w zwykłych plikach `.md`: mapa wszystkiego, katalog
 projektów, graf, który zobaczysz w Obsidianie, i strażnik, który pilnuje porządku. Dla osób
 nietechnicznych. Bez kluczy API, bez kosztów zewnętrznych. Wszystko na Twoim dysku.
@@ -69,5 +73,16 @@ wiadomości, więc nieco szybciej zużywa limity (szczegóły w `KOSZT.md` tamte
 - Twoja pamięć: `~/.claude/pamiec/` — `MEMORY.md`, `projects/`, `rules/schemat-mapy.md`.
 - Mechanizmy (nie ruszasz): ten plugin — `hooks/`, `bin/`, `commands/`, `templates/`.
 
+## Windows
+
+Instalację na Windowsie sprawdzisz listą kontrolną w [WINDOWS-TEST.md](WINDOWS-TEST.md) — przechodzi przez kreator krok po kroku i mówi, które katalogi mają powstać.
+
+## Coś nie działa albo masz pomysł
+
+[Załóż zgłoszenie](https://github.com/studiogo/katalog-projektow/issues/new/choose) — są trzy szablony: błąd, kłopot na Windowsie i pomysł. Podaj system, terminal i wersję Pythona; bez tego trudno cokolwiek odtworzyć.
+
+Nie wklejaj treści swoich plików pamięci — trzymają nazwy klientów i stan projektów. Zasady zgłaszania: [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Licencja
-MIT.
+
+MIT — [LICENSE](LICENSE).
